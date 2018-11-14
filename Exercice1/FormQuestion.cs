@@ -13,6 +13,7 @@ namespace Exercice1
     public partial class FormQuestion : Form
     {
         private List<Question> questions = new List<Question>();
+        private Question question = new Question();
 
         public FormQuestion()
         {
@@ -20,6 +21,9 @@ namespace Exercice1
             questions = serializeQuestions();
             deserializeQuestions(questions);
             chooseRandomQuestion();
+
+            lblNumQuestion.Text = question.IDQuestion.ToString();
+            lblTitreQuestion.Text = question.Intitule;
         }
 
         public List<Question>  serializeQuestions()
@@ -32,15 +36,13 @@ namespace Exercice1
             return questions;
         }
 
-        public List<Question> deserializeQuestions(List<Question> questions)
+        public void deserializeQuestions(List<Question> questions)
         {
             questions = QuestionCollection.CreateFromFile("bonjour.xml");
-            return questions;
         }
 
-        public Question chooseRandomQuestion()
+        public void chooseRandomQuestion()
         {
-            Question question = new Question();
             Random aleatoire = new Random();
             int numQuest= aleatoire.Next(1, 21);
             foreach(Question questionXML in questions)
@@ -50,11 +52,11 @@ namespace Exercice1
                     question = questionXML;
                 }
             }
-            return question; 
         }
 
         private void btnValider_Click(object sender, EventArgs e)
         {
+            lblNumQuestion.Text = question.IDQuestion.ToString();
 
         }
     }

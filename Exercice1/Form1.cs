@@ -22,6 +22,7 @@ namespace Exercice1
             FormQuestion formQuestion = new FormQuestion();
             formQuestion.Show();
             this.Hide();
+
         }
     }
 }
