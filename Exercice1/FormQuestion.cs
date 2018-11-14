@@ -26,12 +26,27 @@ namespace Exercice1
             lblTitreQuestion.Text = question.Intitule;
         }
 
-        public List<Question>  serializeQuestions()
+        public List<Question> serializeQuestions()
         {
-            Question question1 = new Question();
+            string[] repquest1 = { "cc" };
+            string[] repquest2 = { "cc", "ee"};
+            string[] repquest3 = { "cc", "bb" };
+            string[] repquest4 = { "cc", "ff", "gg" };
+            string[] repquest5 = { "cc", "hh", "ii" };
+
+            Question question1 = new Question(1 , "cc" , 2, "bb", repquest1);
+            Question question2 = new Question(2, "cc", 2, "bb", repquest2);
+            Question question3 = new Question(3, "cc",  2, "bb", repquest3);
+            Question question4 = new Question(4, "cc",  2, "bb", repquest4);
+            Question question5 = new Question(5, "cc", 2, "bb", repquest5);
+
             List<Question> questions = new List<Question>();
             questions.Add(question1);
-            questions.Add(question1);
+            questions.Add(question2);
+            questions.Add(question3);
+            questions.Add(question4);
+            questions.Add(question5);
+
             QuestionCollection.Save("bonjour.xml", questions);
             return questions;
         }
@@ -44,7 +59,7 @@ namespace Exercice1
         public void chooseRandomQuestion()
         {
             Random aleatoire = new Random();
-            int numQuest= aleatoire.Next(1, 21);
+            int numQuest= aleatoire.Next(1, 5);
             foreach(Question questionXML in questions)
             {
                 if (questionXML.IDQuestion == numQuest)
@@ -56,7 +71,9 @@ namespace Exercice1
 
         private void btnValider_Click(object sender, EventArgs e)
         {
+            chooseRandomQuestion();
             lblNumQuestion.Text = question.IDQuestion.ToString();
+            lblTitreQuestion.Text = question.Intitule;
 
         }
     }

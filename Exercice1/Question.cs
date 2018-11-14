@@ -21,7 +21,7 @@ namespace Exercice1
 
         [System.Xml.Serialization.XmlElementAttribute("Reponses")]
 
-        public string[] ImagePath { get; set; }
+        public string ImagePath { get; set; }
 
         [System.Xml.Serialization.XmlElementAttribute("ImagePath")]
         public string[] Reponses { get; set; }
@@ -29,8 +29,21 @@ namespace Exercice1
         [System.Xml.Serialization.XmlElementAttribute("ID_BonneReponse")]
         public int ID_BonneReponse { get; set; }
 
+        public Question(int IDQuestion, string Intitule,  int ID_BonneReponse, string ImagePath, string[] Reponses)
+        {
+            this.IDQuestion = IDQuestion;
+            this.Intitule = Intitule;
+            this.ID_BonneReponse = ID_BonneReponse;
+            this.Reponses = Reponses; 
+        }
+
         public Question()
         {
+            this.IDQuestion = 0;
+            this.Intitule = "";
+            this.ImagePath = null;
+            this.ID_BonneReponse = 0 ;
+            this.Reponses = null;
         }
 
 

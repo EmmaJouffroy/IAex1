@@ -1,11 +1,39 @@
 <?xml version="1.0"?>
 <ArrayOfQuestion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Question>
-    <IDQuestion>0</IDQuestion>
-    <ID_BonneReponse>0</ID_BonneReponse>
+    <IDQuestion>1</IDQuestion>
+    <Intitule>cc</Intitule>
+    <ImagePath>cc</ImagePath>
+    <ID_BonneReponse>2</ID_BonneReponse>
   </Question>
   <Question>
-    <IDQuestion>0</IDQuestion>
-    <ID_BonneReponse>0</ID_BonneReponse>
+    <IDQuestion>2</IDQuestion>
+    <Intitule>cc</Intitule>
+    <ImagePath>cc</ImagePath>
+    <ImagePath>ee</ImagePath>
+    <ID_BonneReponse>2</ID_BonneReponse>
+  </Question>
+  <Question>
+    <IDQuestion>3</IDQuestion>
+    <Intitule>cc</Intitule>
+    <ImagePath>cc</ImagePath>
+    <ImagePath>bb</ImagePath>
+    <ID_BonneReponse>2</ID_BonneReponse>
+  </Question>
+  <Question>
+    <IDQuestion>4</IDQuestion>
+    <Intitule>cc</Intitule>
+    <ImagePath>cc</ImagePath>
+    <ImagePath>ff</ImagePath>
+    <ImagePath>gg</ImagePath>
+    <ID_BonneReponse>2</ID_BonneReponse>
+  </Question>
+  <Question>
+    <IDQuestion>5</IDQuestion>
+    <Intitule>cc</Intitule>
+    <ImagePath>cc</ImagePath>
+    <ImagePath>hh</ImagePath>
+    <ImagePath>ii</ImagePath>
+    <ID_BonneReponse>2</ID_BonneReponse>
   </Question>
 </ArrayOfQuestion>
