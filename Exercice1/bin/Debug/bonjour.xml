@@ -4,6 +4,7 @@
     <IDQuestion>1</IDQuestion>
     <Intitule>question1</Intitule>
     <Reponses>cc</Reponses>
+    <ImagePath>bonjour.png</ImagePath>
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
@@ -12,6 +13,7 @@
     <Intitule>question2</Intitule>
     <Reponses>cc</Reponses>
     <Reponses>ee</Reponses>
+    <ImagePath />
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
@@ -20,6 +22,7 @@
     <Intitule>question3</Intitule>
     <Reponses>cc</Reponses>
     <Reponses>bb</Reponses>
+    <ImagePath>bonjour.png</ImagePath>
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
@@ -29,6 +32,7 @@
     <Reponses>cc</Reponses>
     <Reponses>ff</Reponses>
     <Reponses>gg</Reponses>
+    <ImagePath>bonjour.png</ImagePath>
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
@@ -38,6 +42,7 @@
     <Reponses>cc</Reponses>
     <Reponses>hh</Reponses>
     <Reponses>ii</Reponses>
+    <ImagePath />
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
@@ -47,6 +52,7 @@
     <Reponses>cc</Reponses>
     <Reponses>hh</Reponses>
     <Reponses>ii</Reponses>
+    <ImagePath>bonjour.png</ImagePath>
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
@@ -56,6 +62,7 @@
     <Reponses>cc</Reponses>
     <Reponses>hh</Reponses>
     <Reponses>ii</Reponses>
+    <ImagePath>bonjour.png</ImagePath>
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
@@ -65,6 +72,7 @@
     <Reponses>cc</Reponses>
     <Reponses>hh</Reponses>
     <Reponses>ii</Reponses>
+    <ImagePath />
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
@@ -74,6 +82,7 @@
     <Reponses>cc</Reponses>
     <Reponses>hh</Reponses>
     <Reponses>ii</Reponses>
+    <ImagePath>bonjour.png</ImagePath>
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
@@ -83,6 +92,7 @@
     <Reponses>cc</Reponses>
     <Reponses>hh</Reponses>
     <Reponses>ii</Reponses>
+    <ImagePath />
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
@@ -92,6 +102,7 @@
     <Reponses>cc</Reponses>
     <Reponses>hh</Reponses>
     <Reponses>ii</Reponses>
+    <ImagePath>bonjour.png</ImagePath>
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
@@ -101,6 +112,7 @@
     <Reponses>cc</Reponses>
     <Reponses>hh</Reponses>
     <Reponses>ii</Reponses>
+    <ImagePath>bonjour.png</ImagePath>
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
@@ -110,6 +122,7 @@
     <Reponses>cc</Reponses>
     <Reponses>hh</Reponses>
     <Reponses>ii</Reponses>
+    <ImagePath />
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
@@ -119,6 +132,7 @@
     <Reponses>cc</Reponses>
     <Reponses>hh</Reponses>
     <Reponses>ii</Reponses>
+    <ImagePath />
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
@@ -128,6 +142,7 @@
     <Reponses>cc</Reponses>
     <Reponses>hh</Reponses>
     <Reponses>ii</Reponses>
+    <ImagePath>bonjour.png</ImagePath>
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
@@ -137,6 +152,7 @@
     <Reponses>cc</Reponses>
     <Reponses>hh</Reponses>
     <Reponses>ii</Reponses>
+    <ImagePath>bonjour.png</ImagePath>
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
@@ -146,6 +162,7 @@
     <Reponses>cc</Reponses>
     <Reponses>hh</Reponses>
     <Reponses>ii</Reponses>
+    <ImagePath />
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
@@ -155,6 +172,7 @@
     <Reponses>cc</Reponses>
     <Reponses>hh</Reponses>
     <Reponses>ii</Reponses>
+    <ImagePath />
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
@@ -164,6 +182,7 @@
     <Reponses>cc</Reponses>
     <Reponses>hh</Reponses>
     <Reponses>ii</Reponses>
+    <ImagePath />
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
@@ -173,6 +192,7 @@
     <Reponses>cc</Reponses>
     <Reponses>hh</Reponses>
     <Reponses>ii</Reponses>
+    <ImagePath>bonjour.png</ImagePath>
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>

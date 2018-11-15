@@ -31,8 +31,14 @@ namespace Exercice1
             lblTitreQuestion.Text = question.Intitule;
             clbReponses.Items.AddRange(question.Reponses);
             btnResult.Visible = false;
-
-
+            if(question.ImagePath == "")
+            {
+                photo.Visible = false;
+            }
+            else {
+                photo.Visible = true;
+                photo.Image = Image.FromFile(question.ImagePath);
+            }
         }
 
         public List<Question> serializeQuestions() // Celle-ci est bonne, il ne reste plus qu'à mettre les bonnes questions dedans, ainsi que les bonnes réponses associées aux questions
@@ -43,26 +49,26 @@ namespace Exercice1
             string[] repquest4 = { "cc", "ff", "gg" };
             string[] repquest5 = { "cc", "hh", "ii" };
 
-            Question question1 = new Question(1 , "question1" , 0, "bb", repquest1);
-            Question question2 = new Question(2, "question2", 0, "bb", repquest2);
-            Question question3 = new Question(3, "question3",  0, "bb", repquest3);
-            Question question4 = new Question(4, "question4",  0, "bb", repquest4);
-            Question question5 = new Question(5, "question5", 0, "bb", repquest5);
-            Question question6 = new Question(5, "question5", 0, "bb", repquest5);
-            Question question7 = new Question(5, "question5", 0, "bb", repquest5);
-            Question question8 = new Question(5, "question5", 0, "bb", repquest5);
-            Question question9 = new Question(5, "question5", 0, "bb", repquest5);
-            Question question10 = new Question(5, "question5", 0, "bb", repquest5);
-            Question question11 = new Question(5, "question5", 0, "bb", repquest5);
-            Question question12 = new Question(5, "question5", 0, "bb", repquest5);
-            Question question13 = new Question(5, "question5", 0, "bb", repquest5);
-            Question question14 = new Question(5, "question5", 0, "bb", repquest5);
-            Question question15 = new Question(5, "question5", 0, "bb", repquest5);
-            Question question16 = new Question(5, "question5", 0, "bb", repquest5);
-            Question question17 = new Question(5, "question5", 0, "bb", repquest5);
-            Question question18 = new Question(5, "question5", 0, "bb", repquest5);
-            Question question19 = new Question(5, "question5", 0, "bb", repquest5);
-            Question question20 = new Question(5, "question5", 0, "bb", repquest5);
+            Question question1 = new Question(1 , "question1" , 0, "bonjour.png", repquest1);
+            Question question2 = new Question(2, "question2", 0, "", repquest2);
+            Question question3 = new Question(3, "question3",  0, "bonjour.png", repquest3);
+            Question question4 = new Question(4, "question4",  0, "bonjour.png", repquest4);
+            Question question5 = new Question(5, "question5", 0, "", repquest5);
+            Question question6 = new Question(5, "question5", 0, "bonjour.png", repquest5);
+            Question question7 = new Question(5, "question5", 0, "bonjour.png", repquest5);
+            Question question8 = new Question(5, "question5", 0, "", repquest5);
+            Question question9 = new Question(5, "question5", 0, "bonjour.png", repquest5);
+            Question question10 = new Question(5, "question5", 0, "", repquest5);
+            Question question11 = new Question(5, "question5", 0, "bonjour.png", repquest5);
+            Question question12 = new Question(5, "question5", 0, "bonjour.png", repquest5);
+            Question question13 = new Question(5, "question5", 0, "", repquest5);
+            Question question14 = new Question(5, "question5", 0, "", repquest5);
+            Question question15 = new Question(5, "question5", 0, "bonjour.png", repquest5);
+            Question question16 = new Question(5, "question5", 0, "bonjour.png", repquest5);
+            Question question17 = new Question(5, "question5", 0, "", repquest5);
+            Question question18 = new Question(5, "question5", 0, "", repquest5);
+            Question question19 = new Question(5, "question5", 0, "", repquest5);
+            Question question20 = new Question(5, "question5", 0, "bonjour.png", repquest5);
 
 
             List<Question> questions = new List<Question>();
@@ -145,10 +151,14 @@ namespace Exercice1
                 {
                     btnResult.Visible = true;
                     btnQuestSuiv.Visible = false;
+                    btnValider.Visible = false;
                 }
-                
+                else
+                {
+                    btnQuestSuiv.Visible = true;
+                }
+
                 gpBoxReponse.Visible = true;
-                btnQuestSuiv.Visible = true;
                 btnValider.Visible = false;
                 clbReponses.Enabled = false;
                 lblNoRepChecked.Visible = false;
@@ -179,6 +189,14 @@ namespace Exercice1
             lblNumQuestion.Text = compteur.ToString();
             lblTitreQuestion.Text = question.Intitule;
             clbReponses.Items.AddRange(question.Reponses);
+            if (question.ImagePath == "")
+            {
+                photo.Visible = false;
+            }
+            else {
+                photo.Visible = true;
+                photo.Image = Image.FromFile(question.ImagePath);
+            }
 
         }
 

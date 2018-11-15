@@ -40,6 +40,7 @@ namespace Exercice1
             this.IDQuestion = IDQuestion;
             this.Intitule = Intitule;
             this.ID_BonneReponse = ID_BonneReponse;
+            this.ImagePath = ImagePath;
             this.Reponses = Reponses;
             this.Choisie = false;
         }

@@ -38,7 +38,9 @@
             this.btnQuestSuiv = new System.Windows.Forms.Button();
             this.lblNoRepChecked = new System.Windows.Forms.Label();
             this.btnResult = new System.Windows.Forms.Button();
+            this.photo = new System.Windows.Forms.PictureBox();
             this.gpBoxReponse.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.photo)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNumQuestion
@@ -63,7 +65,7 @@
             // 
             this.clbReponses.BackColor = System.Drawing.SystemColors.MenuBar;
             this.clbReponses.FormattingEnabled = true;
-            this.clbReponses.Location = new System.Drawing.Point(37, 94);
+            this.clbReponses.Location = new System.Drawing.Point(37, 186);
             this.clbReponses.Name = "clbReponses";
             this.clbReponses.Size = new System.Drawing.Size(413, 139);
             this.clbReponses.TabIndex = 2;
@@ -71,7 +73,7 @@
             // 
             // btnValider
             // 
-            this.btnValider.Location = new System.Drawing.Point(158, 399);
+            this.btnValider.Location = new System.Drawing.Point(155, 486);
             this.btnValider.Name = "btnValider";
             this.btnValider.Size = new System.Drawing.Size(180, 52);
             this.btnValider.TabIndex = 3;
@@ -83,7 +85,7 @@
             // 
             this.gpBoxReponse.Controls.Add(this.lblBonneRep);
             this.gpBoxReponse.Controls.Add(this.lnlBonneRepTitre);
-            this.gpBoxReponse.Location = new System.Drawing.Point(40, 291);
+            this.gpBoxReponse.Location = new System.Drawing.Point(37, 361);
             this.gpBoxReponse.Name = "gpBoxReponse";
             this.gpBoxReponse.Size = new System.Drawing.Size(413, 102);
             this.gpBoxReponse.TabIndex = 4;
@@ -111,7 +113,7 @@
             // 
             // btnQuestSuiv
             // 
-            this.btnQuestSuiv.Location = new System.Drawing.Point(257, 412);
+            this.btnQuestSuiv.Location = new System.Drawing.Point(254, 499);
             this.btnQuestSuiv.Name = "btnQuestSuiv";
             this.btnQuestSuiv.Size = new System.Drawing.Size(196, 52);
             this.btnQuestSuiv.TabIndex = 5;
@@ -123,7 +125,7 @@
             // lblNoRepChecked
             // 
             this.lblNoRepChecked.AutoSize = true;
-            this.lblNoRepChecked.Location = new System.Drawing.Point(119, 258);
+            this.lblNoRepChecked.Location = new System.Drawing.Point(116, 328);
             this.lblNoRepChecked.Name = "lblNoRepChecked";
             this.lblNoRepChecked.Size = new System.Drawing.Size(237, 13);
             this.lblNoRepChecked.TabIndex = 6;
@@ -131,7 +133,7 @@
             // 
             // btnResult
             // 
-            this.btnResult.Location = new System.Drawing.Point(158, 457);
+            this.btnResult.Location = new System.Drawing.Point(155, 544);
             this.btnResult.Name = "btnResult";
             this.btnResult.Size = new System.Drawing.Size(179, 46);
             this.btnResult.TabIndex = 7;
@@ -139,11 +141,20 @@
             this.btnResult.UseVisualStyleBackColor = true;
             this.btnResult.Click += new System.EventHandler(this.btnResult_Click);
             // 
+            // photo
+            // 
+            this.photo.Location = new System.Drawing.Point(37, 98);
+            this.photo.Name = "photo";
+            this.photo.Size = new System.Drawing.Size(413, 82);
+            this.photo.TabIndex = 8;
+            this.photo.TabStop = false;
+            // 
             // FormQuestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(507, 613);
+            this.Controls.Add(this.photo);
             this.Controls.Add(this.btnResult);
             this.Controls.Add(this.lblNoRepChecked);
             this.Controls.Add(this.btnQuestSuiv);
@@ -156,6 +167,7 @@
             this.Text = "FormQuestion";
             this.gpBoxReponse.ResumeLayout(false);
             this.gpBoxReponse.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.photo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -173,5 +185,6 @@
         private System.Windows.Forms.Label lnlBonneRepTitre;
         private System.Windows.Forms.Label lblNoRepChecked;
         private System.Windows.Forms.Button btnResult;
+        private System.Windows.Forms.PictureBox photo;
     }
 }
