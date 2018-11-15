@@ -20,30 +20,33 @@ namespace Exercice1
         public string Intitule { get; set; }
 
         [System.Xml.Serialization.XmlElementAttribute("Reponses")]
+        public List<string> Reponses { get; set; }
 
-        public string ImagePath { get; set; }
+       
+
 
         [System.Xml.Serialization.XmlElementAttribute("ImagePath")]
-        public string[] Reponses { get; set; }
+        public string ImagePath { get; set; }
+
 
         [System.Xml.Serialization.XmlElementAttribute("ID_BonneReponse")]
         public int ID_BonneReponse { get; set; }
 
-        public Question(int IDQuestion, string Intitule,  int ID_BonneReponse, string ImagePath, string[] Reponses)
+        [System.Xml.Serialization.XmlElementAttribute("Choisie")]
+        public bool Choisie { get; set; }
+
+        public Question(int IDQuestion, string Intitule,  int ID_BonneReponse, string ImagePath, List<string> Reponses)
         {
             this.IDQuestion = IDQuestion;
             this.Intitule = Intitule;
             this.ID_BonneReponse = ID_BonneReponse;
-            this.Reponses = Reponses; 
+            this.Reponses = Reponses;
+            this.Choisie = false;
         }
 
         public Question()
         {
-            this.IDQuestion = 0;
-            this.Intitule = "";
-            this.ImagePath = null;
-            this.ID_BonneReponse = 0 ;
-            this.Reponses = null;
+
         }
 
 

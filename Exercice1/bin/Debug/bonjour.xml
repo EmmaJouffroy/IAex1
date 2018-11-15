@@ -2,38 +2,43 @@
 <ArrayOfQuestion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Question>
     <IDQuestion>1</IDQuestion>
-    <Intitule>cc</Intitule>
-    <ImagePath>cc</ImagePath>
+    <Intitule>question1</Intitule>
+    <Reponses>cc</Reponses>
     <ID_BonneReponse>2</ID_BonneReponse>
+    <Choisie>false</Choisie>
   </Question>
   <Question>
     <IDQuestion>2</IDQuestion>
-    <Intitule>cc</Intitule>
-    <ImagePath>cc</ImagePath>
-    <ImagePath>ee</ImagePath>
+    <Intitule>question2</Intitule>
+    <Reponses>cc</Reponses>
+    <Reponses>ee</Reponses>
     <ID_BonneReponse>2</ID_BonneReponse>
+    <Choisie>false</Choisie>
   </Question>
   <Question>
     <IDQuestion>3</IDQuestion>
-    <Intitule>cc</Intitule>
-    <ImagePath>cc</ImagePath>
-    <ImagePath>bb</ImagePath>
+    <Intitule>question3</Intitule>
+    <Reponses>cc</Reponses>
+    <Reponses>bb</Reponses>
     <ID_BonneReponse>2</ID_BonneReponse>
+    <Choisie>false</Choisie>
   </Question>
   <Question>
     <IDQuestion>4</IDQuestion>
-    <Intitule>cc</Intitule>
-    <ImagePath>cc</ImagePath>
-    <ImagePath>ff</ImagePath>
-    <ImagePath>gg</ImagePath>
+    <Intitule>question4</Intitule>
+    <Reponses>cc</Reponses>
+    <Reponses>ff</Reponses>
+    <Reponses>gg</Reponses>
     <ID_BonneReponse>2</ID_BonneReponse>
+    <Choisie>false</Choisie>
   </Question>
   <Question>
     <IDQuestion>5</IDQuestion>
-    <Intitule>cc</Intitule>
-    <ImagePath>cc</ImagePath>
-    <ImagePath>hh</ImagePath>
-    <ImagePath>ii</ImagePath>
+    <Intitule>question5</Intitule>
+    <Reponses>cc</Reponses>
+    <Reponses>hh</Reponses>
+    <Reponses>ii</Reponses>
     <ID_BonneReponse>2</ID_BonneReponse>
+    <Choisie>false</Choisie>
   </Question>
 </ArrayOfQuestion>
