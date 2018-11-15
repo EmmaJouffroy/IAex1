@@ -132,7 +132,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(496, 476);
+            this.ClientSize = new System.Drawing.Size(507, 613);
             this.Controls.Add(this.lblNoRepChecked);
             this.Controls.Add(this.btnQuestSuiv);
             this.Controls.Add(this.btnValider);

@@ -4,7 +4,7 @@
     <IDQuestion>1</IDQuestion>
     <Intitule>question1</Intitule>
     <Reponses>cc</Reponses>
-    <ID_BonneReponse>2</ID_BonneReponse>
+    <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
   <Question>
@@ -12,7 +12,7 @@
     <Intitule>question2</Intitule>
     <Reponses>cc</Reponses>
     <Reponses>ee</Reponses>
-    <ID_BonneReponse>2</ID_BonneReponse>
+    <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
   <Question>
@@ -20,7 +20,7 @@
     <Intitule>question3</Intitule>
     <Reponses>cc</Reponses>
     <Reponses>bb</Reponses>
-    <ID_BonneReponse>2</ID_BonneReponse>
+    <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
   <Question>
@@ -29,7 +29,7 @@
     <Reponses>cc</Reponses>
     <Reponses>ff</Reponses>
     <Reponses>gg</Reponses>
-    <ID_BonneReponse>2</ID_BonneReponse>
+    <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
   <Question>
@@ -38,7 +38,7 @@
     <Reponses>cc</Reponses>
     <Reponses>hh</Reponses>
     <Reponses>ii</Reponses>
-    <ID_BonneReponse>2</ID_BonneReponse>
+    <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
 </ArrayOfQuestion>

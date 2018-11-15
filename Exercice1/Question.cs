@@ -20,7 +20,7 @@ namespace Exercice1
         public string Intitule { get; set; }
 
         [System.Xml.Serialization.XmlElementAttribute("Reponses")]
-        public List<string> Reponses { get; set; }
+        public string[] Reponses { get; set; }
 
        
 
@@ -35,7 +35,7 @@ namespace Exercice1
         [System.Xml.Serialization.XmlElementAttribute("Choisie")]
         public bool Choisie { get; set; }
 
-        public Question(int IDQuestion, string Intitule,  int ID_BonneReponse, string ImagePath, List<string> Reponses)
+        public Question(int IDQuestion, string Intitule,  int ID_BonneReponse, string ImagePath, string[] Reponses)
         {
             this.IDQuestion = IDQuestion;
             this.Intitule = Intitule;
