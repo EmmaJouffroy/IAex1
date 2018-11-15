@@ -14,14 +14,15 @@ namespace Exercice1
     {
         private List<Question> questions = new List<Question>();
         private Question question = new Question();
+        private List<int> questChoisies = new List<int>();
 
         public FormQuestion()
         {
             InitializeComponent();
             questions = serializeQuestions();
             deserializeQuestions(questions);
-            chooseRandomQuestion();
 
+            chooseRandomQuestion();
             lblNumQuestion.Text = question.IDQuestion.ToString();
             lblTitreQuestion.Text = question.Intitule;
         }
@@ -58,23 +59,45 @@ namespace Exercice1
 
         public void chooseRandomQuestion()
         {
+            bool memeQuest = true;
             Random aleatoire = new Random();
-            int numQuest= aleatoire.Next(1, 5);
-            foreach(Question questionXML in questions)
+            int numQuest = aleatoire.Next(1, 6);
+
+            foreach (int numQuestChoisi in questChoisies)
+            {
+                if (question.IDQuestion.Equals(numQuestChoisi))
+                {
+                    memeQuest = true;
+                }
+                else
+                {
+                    memeQuest = false;
+                }
+            }
+
+            do
+            {
+                 numQuest = aleatoire.Next(1, 5);
+            }
+            while (memeQuest == false);
+
+
+            foreach (Question questionXML in questions)
             {
                 if (questionXML.IDQuestion == numQuest)
                 {
                     question = questionXML;
                 }
             }
+            questChoisies.Add(numQuest);
         }
 
         private void btnValider_Click(object sender, EventArgs e)
         {
-            chooseRandomQuestion();
-            lblNumQuestion.Text = question.IDQuestion.ToString();
-            lblTitreQuestion.Text = question.Intitule;
 
+                chooseRandomQuestion();
+                lblNumQuestion.Text = question.IDQuestion.ToString();
+                lblTitreQuestion.Text = question.Intitule;
         }
     }
 }
