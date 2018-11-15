@@ -37,6 +37,7 @@
             this.lnlBonneRepTitre = new System.Windows.Forms.Label();
             this.btnQuestSuiv = new System.Windows.Forms.Button();
             this.lblNoRepChecked = new System.Windows.Forms.Label();
+            this.btnResult = new System.Windows.Forms.Button();
             this.gpBoxReponse.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -128,11 +129,22 @@
             this.lblNoRepChecked.TabIndex = 6;
             this.lblNoRepChecked.Text = "Vous devez choisir une réponse avant de valider";
             // 
+            // btnResult
+            // 
+            this.btnResult.Location = new System.Drawing.Point(158, 457);
+            this.btnResult.Name = "btnResult";
+            this.btnResult.Size = new System.Drawing.Size(179, 46);
+            this.btnResult.TabIndex = 7;
+            this.btnResult.Text = "Voir Résultat";
+            this.btnResult.UseVisualStyleBackColor = true;
+            this.btnResult.Click += new System.EventHandler(this.btnResult_Click);
+            // 
             // FormQuestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(507, 613);
+            this.Controls.Add(this.btnResult);
             this.Controls.Add(this.lblNoRepChecked);
             this.Controls.Add(this.btnQuestSuiv);
             this.Controls.Add(this.btnValider);
@@ -160,5 +172,6 @@
         private System.Windows.Forms.Label lblBonneRep;
         private System.Windows.Forms.Label lnlBonneRepTitre;
         private System.Windows.Forms.Label lblNoRepChecked;
+        private System.Windows.Forms.Button btnResult;
     }
 }

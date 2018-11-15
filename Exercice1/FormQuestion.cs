@@ -15,12 +15,13 @@ namespace Exercice1
         private List<Question> questions = new List<Question>();
         private Question question = new Question();
         private int compteur = 0;
-        private int score = 0;
+        public int score = 0;
         private string reponse = "";
 
         public FormQuestion() // Normalement cette fonction là est bonne
         {
             InitializeComponent();
+            clbReponses.Click += new EventHandler(clbReponses_SelectedIndexChanged);
             questions = serializeQuestions();
             deserializeQuestions(questions);
             lblNoRepChecked.Visible = false;
@@ -29,7 +30,9 @@ namespace Exercice1
             lblNumQuestion.Text = compteur.ToString();
             lblTitreQuestion.Text = question.Intitule;
             clbReponses.Items.AddRange(question.Reponses);
-            
+            btnResult.Visible = false;
+
+
         }
 
         public List<Question> serializeQuestions() // Celle-ci est bonne, il ne reste plus qu'à mettre les bonnes questions dedans, ainsi que les bonnes réponses associées aux questions
@@ -45,6 +48,22 @@ namespace Exercice1
             Question question3 = new Question(3, "question3",  0, "bb", repquest3);
             Question question4 = new Question(4, "question4",  0, "bb", repquest4);
             Question question5 = new Question(5, "question5", 0, "bb", repquest5);
+            Question question6 = new Question(5, "question5", 0, "bb", repquest5);
+            Question question7 = new Question(5, "question5", 0, "bb", repquest5);
+            Question question8 = new Question(5, "question5", 0, "bb", repquest5);
+            Question question9 = new Question(5, "question5", 0, "bb", repquest5);
+            Question question10 = new Question(5, "question5", 0, "bb", repquest5);
+            Question question11 = new Question(5, "question5", 0, "bb", repquest5);
+            Question question12 = new Question(5, "question5", 0, "bb", repquest5);
+            Question question13 = new Question(5, "question5", 0, "bb", repquest5);
+            Question question14 = new Question(5, "question5", 0, "bb", repquest5);
+            Question question15 = new Question(5, "question5", 0, "bb", repquest5);
+            Question question16 = new Question(5, "question5", 0, "bb", repquest5);
+            Question question17 = new Question(5, "question5", 0, "bb", repquest5);
+            Question question18 = new Question(5, "question5", 0, "bb", repquest5);
+            Question question19 = new Question(5, "question5", 0, "bb", repquest5);
+            Question question20 = new Question(5, "question5", 0, "bb", repquest5);
+
 
             List<Question> questions = new List<Question>();
             questions.Add(question1);
@@ -52,6 +71,22 @@ namespace Exercice1
             questions.Add(question3);
             questions.Add(question4);
             questions.Add(question5);
+            questions.Add(question6);
+            questions.Add(question7);
+            questions.Add(question8);
+            questions.Add(question9);
+            questions.Add(question10);
+            questions.Add(question11);
+            questions.Add(question12);
+            questions.Add(question13);
+            questions.Add(question14);
+            questions.Add(question15);
+            questions.Add(question16);
+            questions.Add(question17);
+            questions.Add(question18);
+            questions.Add(question19);
+            questions.Add(question20);
+
 
             QuestionCollection.Save("bonjour.xml", questions);
             return questions;
@@ -106,6 +141,11 @@ namespace Exercice1
                         }
                     }
                 }
+                if (compteur == 20)
+                {
+                    btnResult.Visible = true;
+                    btnQuestSuiv.Visible = false;
+                }
                 
                 gpBoxReponse.Visible = true;
                 btnQuestSuiv.Visible = true;
@@ -116,20 +156,16 @@ namespace Exercice1
 
             }
 
-        private void clbReponses_ItemCheck(object sender, ItemCheckEventArgs e)
 
+        private void clbReponses_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-            if (clbReponses.CheckedItems.Count >= 1 && e.CurrentValue != CheckState.Checked)
-
-            {
-
-                e.NewValue = e.CurrentValue;
-
-            }
-
+            int iSelectedIndex = clbReponses.SelectedIndex;
+            if (iSelectedIndex == -1)
+                return;
+            for (int iIndex = 0; iIndex < clbReponses.Items.Count; iIndex++)
+                clbReponses.SetItemCheckState(iIndex, CheckState.Unchecked);
+            clbReponses.SetItemCheckState(iSelectedIndex, CheckState.Checked);
         }
-
 
         private void btnQuestSuiv_Click(object sender, EventArgs e)
         {
@@ -146,6 +182,11 @@ namespace Exercice1
 
         }
 
-
+        private void btnResult_Click(object sender, EventArgs e)
+        {
+            FormFinQuestion formResultat = new FormFinQuestion(score);
+            formResultat.Show();
+            this.Hide();
+        }
     }
 }
