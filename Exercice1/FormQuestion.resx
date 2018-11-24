@@ -117,4 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lblTitreQuestion.Text" xml:space="preserve">
+    <value>Le robot Pepper est un robot humanoïde développé par la société SoftBank. Il est utilisé dans certaines entreprises pour accueillir les clients, mais également chez certains particuliers comme compagnon. Ce robot est dit “émotionnel” : il est capable de reconnaître certaines émotions, adopte son langage en fonction de son interlocuteur mais respecte également une certaine distance avec la personne qui se trouve en face de lui. Quelle sorte d’IA peut être considéré le robot Pepper  ?&lt;/Intitule&gt;
+</value>
+  </data>
 </root>

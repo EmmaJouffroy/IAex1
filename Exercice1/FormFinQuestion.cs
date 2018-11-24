@@ -22,8 +22,8 @@ namespace Exercice1
 
         private void btnRecommencer_Click(object sender, EventArgs e)
         {
-            FormQuestion formQuestion = new FormQuestion();
-            formQuestion.Show();
+            Form1 debut = new Form1();
+            debut.Show();
             this.Hide();
         }
     }

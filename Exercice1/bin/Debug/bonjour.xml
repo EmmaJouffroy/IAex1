@@ -2,197 +2,186 @@
 <ArrayOfQuestion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Question>
     <IDQuestion>1</IDQuestion>
-    <Intitule>question1</Intitule>
-    <Reponses>cc</Reponses>
-    <ImagePath>bonjour.png</ImagePath>
-    <ID_BonneReponse>0</ID_BonneReponse>
+    <Intitule>Le robot Pepper est un robot humanoïde développé par la société SoftBank. Il est utilisé dans certaines entreprises pour accueillir les clients, mais également chez certains particuliers comme compagnon. Ce robot est dit “émotionnel” : il est capable de reconnaître certaines émotions, adopte son langage en fonction de son interlocuteur mais respecte également une certaine distance avec la personne qui se trouve en face de lui. Quelle sorte d’IA peut être considéré le robot Pepper  ?</Intitule>
+    <Reponses>IA Forte </Reponses>
+    <Reponses>IA Faible </Reponses>
+    <Reponses>IA Moyenne </Reponses>
+    <ImagePath />
+    <ID_BonneReponse>1</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
   <Question>
     <IDQuestion>2</IDQuestion>
-    <Intitule>question2</Intitule>
-    <Reponses>cc</Reponses>
-    <Reponses>ee</Reponses>
+    <Intitule>Quelle est la représentation matricielle d’un graph orienté ?</Intitule>
+    <Reponses>Une matrice d’adjacence symétrique</Reponses>
+    <Reponses>Une matrice transposée</Reponses>
+    <Reponses>Une matrice autoadjointe</Reponses>
     <ImagePath />
-    <ID_BonneReponse>0</ID_BonneReponse>
+    <ID_BonneReponse>1</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
   <Question>
     <IDQuestion>3</IDQuestion>
-    <Intitule>question3</Intitule>
-    <Reponses>cc</Reponses>
-    <Reponses>bb</Reponses>
-    <ImagePath>bonjour.png</ImagePath>
+    <Intitule>Quelle stratégie est utilisée dans l’algorithme de Dikjstra ?</Intitule>
+    <Reponses>Stratégie FIFO</Reponses>
+    <Reponses>Stratégie LIFO</Reponses>
+    <Reponses>Stratégie top-to-bottom</Reponses>
+    <ImagePath />
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
   <Question>
     <IDQuestion>4</IDQuestion>
-    <Intitule>question4</Intitule>
-    <Reponses>cc</Reponses>
-    <Reponses>ff</Reponses>
-    <Reponses>gg</Reponses>
-    <ImagePath>bonjour.png</ImagePath>
-    <ID_BonneReponse>0</ID_BonneReponse>
-    <Choisie>false</Choisie>
-  </Question>
-  <Question>
-    <IDQuestion>5</IDQuestion>
-    <Intitule>question5</Intitule>
-    <Reponses>cc</Reponses>
-    <Reponses>hh</Reponses>
-    <Reponses>ii</Reponses>
+    <Intitule>L’algorithme de Dikjstra assure t-il de trouver le plus court chemin s’il existe des coûts négatifs ?</Intitule>
+    <Reponses>Oui</Reponses>
+    <Reponses>Non</Reponses>
     <ImagePath />
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
   <Question>
     <IDQuestion>5</IDQuestion>
-    <Intitule>question5</Intitule>
-    <Reponses>cc</Reponses>
-    <Reponses>hh</Reponses>
-    <Reponses>ii</Reponses>
-    <ImagePath>bonjour.png</ImagePath>
-    <ID_BonneReponse>0</ID_BonneReponse>
+    <Intitule>Quelle est la valeur de la variable "eval" dans cet algorithme min/max ?</Intitule>
+    <Reponses>i * MIN (i * eval, i * evaluer (-n, niveau -1, i ))</Reponses>
+    <Reponses>i * MAX (i * eval, i * evaluer (-n, niveau -1, i ))</Reponses>
+    <Reponses>i * MIN (i * eval, i * evaluer (n, niveau + 1, -i ))</Reponses>
+    <ImagePath>Question5.png</ImagePath>
+    <ID_BonneReponse>2</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
   <Question>
-    <IDQuestion>5</IDQuestion>
-    <Intitule>question5</Intitule>
-    <Reponses>cc</Reponses>
-    <Reponses>hh</Reponses>
-    <Reponses>ii</Reponses>
-    <ImagePath>bonjour.png</ImagePath>
-    <ID_BonneReponse>0</ID_BonneReponse>
+    <IDQuestion>6</IDQuestion>
+    <Intitule>Quel est l'itinéraire le plus court qui relie A à H ?</Intitule>
+    <Reponses>A →  D →  C →  G →  H </Reponses>
+    <Reponses>A →  B →  C →  D →  F →  G →  H</Reponses>
+    <Reponses>A →  E →  F →  H</Reponses>
+    <ImagePath>Question6.png</ImagePath>
+    <ID_BonneReponse>1</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
   <Question>
-    <IDQuestion>5</IDQuestion>
-    <Intitule>question5</Intitule>
-    <Reponses>cc</Reponses>
-    <Reponses>hh</Reponses>
-    <Reponses>ii</Reponses>
+    <IDQuestion>7</IDQuestion>
+    <Intitule>Dans quel algorithme utilise t-on ce qu’on appelle l’heuristique ? </Intitule>
+    <Reponses>Min/Max</Reponses>
+    <Reponses>Dijkstra</Reponses>
+    <Reponses>A*</Reponses>
+    <Reponses>Alpha Beta</Reponses>
+    <ImagePath />
+    <ID_BonneReponse>2</ID_BonneReponse>
+    <Choisie>false</Choisie>
+  </Question>
+  <Question>
+    <IDQuestion>8</IDQuestion>
+    <Intitule>En utilisant Alpha Beta, les frères de f doivent-ils être explorés si la valeur d’un fils f d’un noeud Max est supérieure à la valeur courante d’un noeud Min ancêtre ?</Intitule>
+    <Reponses>Oui</Reponses>
+    <Reponses>Non</Reponses>
     <ImagePath />
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
   <Question>
-    <IDQuestion>5</IDQuestion>
-    <Intitule>question5</Intitule>
-    <Reponses>cc</Reponses>
-    <Reponses>hh</Reponses>
-    <Reponses>ii</Reponses>
-    <ImagePath>bonjour.png</ImagePath>
-    <ID_BonneReponse>0</ID_BonneReponse>
-    <Choisie>false</Choisie>
-  </Question>
-  <Question>
-    <IDQuestion>5</IDQuestion>
-    <Intitule>question5</Intitule>
-    <Reponses>cc</Reponses>
-    <Reponses>hh</Reponses>
-    <Reponses>ii</Reponses>
+    <IDQuestion>9</IDQuestion>
+    <Intitule>Quelle serait l’heuristique la plus appropriée pour le jeu du taquin ? </Intitule>
+    <Reponses>La somme des mouvements « à vol d’oiseau » à effectuer pour que chaque case soit à la bonne place</Reponses>
+    <Reponses>Non</Reponses>
     <ImagePath />
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
   <Question>
-    <IDQuestion>5</IDQuestion>
-    <Intitule>question5</Intitule>
-    <Reponses>cc</Reponses>
-    <Reponses>hh</Reponses>
-    <Reponses>ii</Reponses>
-    <ImagePath>bonjour.png</ImagePath>
-    <ID_BonneReponse>0</ID_BonneReponse>
+    <IDQuestion>10</IDQuestion>
+    <Intitule>Sur un robot mindstorm, quel capteur actif est utilisé afin de contourner un objet grâce à sa distance avec le robot ?  </Intitule>
+    <Reponses>capteur accéléromètre</Reponses>
+    <Reponses>capteur d’angle</Reponses>
+    <Reponses>capteur barométrique</Reponses>
+    <Reponses>capteur sensoriel</Reponses>
+    <ImagePath />
+    <ID_BonneReponse>3</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
   <Question>
-    <IDQuestion>5</IDQuestion>
-    <Intitule>question5</Intitule>
-    <Reponses>cc</Reponses>
-    <Reponses>hh</Reponses>
-    <Reponses>ii</Reponses>
-    <ImagePath>bonjour.png</ImagePath>
-    <ID_BonneReponse>0</ID_BonneReponse>
-    <Choisie>false</Choisie>
-  </Question>
-  <Question>
-    <IDQuestion>5</IDQuestion>
-    <Intitule>question5</Intitule>
-    <Reponses>cc</Reponses>
-    <Reponses>hh</Reponses>
-    <Reponses>ii</Reponses>
+    <IDQuestion>11</IDQuestion>
+    <Intitule>Quelle notion utilisent les algorithmes génétiques ?</Intitule>
+    <Reponses>Notion de sélection naturelle</Reponses>
     <ImagePath />
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
   <Question>
-    <IDQuestion>5</IDQuestion>
-    <Intitule>question5</Intitule>
-    <Reponses>cc</Reponses>
-    <Reponses>hh</Reponses>
-    <Reponses>ii</Reponses>
+    <IDQuestion>12</IDQuestion>
+    <Intitule>Combien de degrés de libertés offrent 6 axes de rotation sur un bras motorisé ?</Intitule>
+    <Reponses>6</Reponses>
+    <Reponses>12</Reponses>
+    <Reponses>5</Reponses>
     <ImagePath />
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
   <Question>
-    <IDQuestion>5</IDQuestion>
-    <Intitule>question5</Intitule>
-    <Reponses>cc</Reponses>
-    <Reponses>hh</Reponses>
-    <Reponses>ii</Reponses>
-    <ImagePath>bonjour.png</ImagePath>
+    <IDQuestion>13</IDQuestion>
+    <Intitule>Quelle est la quatrième étape de l’algorithme génétique ?</Intitule>
+    <Reponses>6</Reponses>
+    <Reponses>12</Reponses>
+    <Reponses>5</Reponses>
+    <ImagePath>Question13.png</ImagePath>
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
   <Question>
-    <IDQuestion>5</IDQuestion>
-    <Intitule>question5</Intitule>
-    <Reponses>cc</Reponses>
-    <Reponses>hh</Reponses>
-    <Reponses>ii</Reponses>
-    <ImagePath>bonjour.png</ImagePath>
-    <ID_BonneReponse>0</ID_BonneReponse>
-    <Choisie>false</Choisie>
-  </Question>
-  <Question>
-    <IDQuestion>5</IDQuestion>
-    <Intitule>question5</Intitule>
-    <Reponses>cc</Reponses>
-    <Reponses>hh</Reponses>
-    <Reponses>ii</Reponses>
+    <IDQuestion>14</IDQuestion>
+    <Intitule> En reconnaissance de formes, par quoi est caractérisé une extrémité gauche dans la matrice d’adjacence d’un chiffre ?</Intitule>
+    <Reponses>Un nœud n extrémité gauche est caractérisé par un « d » sur la ligne n, 0 « b » sur la ligne n, et zéro « b » et zéro « d » sur la colonne n.</Reponses>
     <ImagePath />
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
   <Question>
-    <IDQuestion>5</IDQuestion>
-    <Intitule>question5</Intitule>
-    <Reponses>cc</Reponses>
-    <Reponses>hh</Reponses>
-    <Reponses>ii</Reponses>
+    <IDQuestion>15</IDQuestion>
+    <Intitule>Dans quel cas l’algorithme de Dikjstra est-il inexploitable à lui seul ?</Intitule>
+    <Reponses>Lorsque le nombre d’états d’un successeurs est très grand</Reponses>
     <ImagePath />
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
   <Question>
-    <IDQuestion>5</IDQuestion>
-    <Intitule>question5</Intitule>
-    <Reponses>cc</Reponses>
-    <Reponses>hh</Reponses>
-    <Reponses>ii</Reponses>
+    <IDQuestion>16</IDQuestion>
+    <Intitule>Dans l’algortihme A*, à quoi permet la classe GenericNode ?</Intitule>
+    <Reponses>A réutiliser cette classe abstraite afin qu’elle puisse s’appliquer à différents arbres </Reponses>
     <ImagePath />
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>
   <Question>
-    <IDQuestion>5</IDQuestion>
-    <Intitule>question5</Intitule>
-    <Reponses>cc</Reponses>
-    <Reponses>hh</Reponses>
-    <Reponses>ii</Reponses>
-    <ImagePath>bonjour.png</ImagePath>
+    <IDQuestion>17</IDQuestion>
+    <Intitule>Lequel de ces jeux ne peut pas être résolu par l’algorithme min / max ? </Intitule>
+    <Reponses>Taquin</Reponses>
+    <Reponses>Echecs</Reponses>
+    <Reponses>Dames</Reponses>
+    <ImagePath />
+    <ID_BonneReponse>0</ID_BonneReponse>
+    <Choisie>false</Choisie>
+  </Question>
+  <Question>
+    <IDQuestion>18</IDQuestion>
+    <Intitule>Quelle supposition est établie pour les algorithmes min / max et alpha / Beta ?</Intitule>
+    <Reponses>Que l’adversaire joue de manière optimale </Reponses>
+    <ImagePath />
+    <ID_BonneReponse>0</ID_BonneReponse>
+    <Choisie>false</Choisie>
+  </Question>
+  <Question>
+    <IDQuestion>19</IDQuestion>
+    <Intitule>Dans une modélisation de graph, quelle est la différence entre une arrête et un arc ?</Intitule>
+    <Reponses>Une arrête est dans un graphe orienté, tandis qu'un arc est dans un graphe non orienté</Reponses>
+    <ImagePath />
+    <ID_BonneReponse>0</ID_BonneReponse>
+    <Choisie>false</Choisie>
+  </Question>
+  <Question>
+    <IDQuestion>20</IDQuestion>
+    <Intitule>Pour optimiser l’algorithme alpha-Beta et maximiser les coupures, quel serait l’arbre idéal</Intitule>
+    <Reponses>Les fils d’un noeud MAX soient triés par ordre décroissant</Reponses>
+    <ImagePath />
     <ID_BonneReponse>0</ID_BonneReponse>
     <Choisie>false</Choisie>
   </Question>

@@ -22,8 +22,13 @@ namespace Exercice1
         {
             InitializeComponent();
             clbReponses.Click += new EventHandler(clbReponses_SelectedIndexChanged);
-            questions = serializeQuestions();
-            deserializeQuestions(questions);
+            photo.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbQuest.Visible = true;
+            pbQuest.Minimum = 1;
+            pbQuest.Maximum = 20;
+            pbQuest.Value = 1;
+            pbQuest.Step = 1;
+            deserializeQuestions();
             lblNoRepChecked.Visible = false;
             chooseRandomQuestion();
             lblBonneRep.Text = reponse;
@@ -41,64 +46,9 @@ namespace Exercice1
             }
         }
 
-        public List<Question> serializeQuestions() // Celle-ci est bonne, il ne reste plus qu'à mettre les bonnes questions dedans, ainsi que les bonnes réponses associées aux questions
-        {
-            string[] repquest1 = { "cc" };
-            string[] repquest2 = { "cc", "ee"};
-            string[] repquest3 = { "cc", "bb" };
-            string[] repquest4 = { "cc", "ff", "gg" };
-            string[] repquest5 = { "cc", "hh", "ii" };
-
-            Question question1 = new Question(1 , "question1" , 0, "bonjour.png", repquest1);
-            Question question2 = new Question(2, "question2", 0, "", repquest2);
-            Question question3 = new Question(3, "question3",  0, "bonjour.png", repquest3);
-            Question question4 = new Question(4, "question4",  0, "bonjour.png", repquest4);
-            Question question5 = new Question(5, "question5", 0, "", repquest5);
-            Question question6 = new Question(5, "question5", 0, "bonjour.png", repquest5);
-            Question question7 = new Question(5, "question5", 0, "bonjour.png", repquest5);
-            Question question8 = new Question(5, "question5", 0, "", repquest5);
-            Question question9 = new Question(5, "question5", 0, "bonjour.png", repquest5);
-            Question question10 = new Question(5, "question5", 0, "", repquest5);
-            Question question11 = new Question(5, "question5", 0, "bonjour.png", repquest5);
-            Question question12 = new Question(5, "question5", 0, "bonjour.png", repquest5);
-            Question question13 = new Question(5, "question5", 0, "", repquest5);
-            Question question14 = new Question(5, "question5", 0, "", repquest5);
-            Question question15 = new Question(5, "question5", 0, "bonjour.png", repquest5);
-            Question question16 = new Question(5, "question5", 0, "bonjour.png", repquest5);
-            Question question17 = new Question(5, "question5", 0, "", repquest5);
-            Question question18 = new Question(5, "question5", 0, "", repquest5);
-            Question question19 = new Question(5, "question5", 0, "", repquest5);
-            Question question20 = new Question(5, "question5", 0, "bonjour.png", repquest5);
 
 
-            List<Question> questions = new List<Question>();
-            questions.Add(question1);
-            questions.Add(question2);
-            questions.Add(question3);
-            questions.Add(question4);
-            questions.Add(question5);
-            questions.Add(question6);
-            questions.Add(question7);
-            questions.Add(question8);
-            questions.Add(question9);
-            questions.Add(question10);
-            questions.Add(question11);
-            questions.Add(question12);
-            questions.Add(question13);
-            questions.Add(question14);
-            questions.Add(question15);
-            questions.Add(question16);
-            questions.Add(question17);
-            questions.Add(question18);
-            questions.Add(question19);
-            questions.Add(question20);
-
-
-            QuestionCollection.Save("bonjour.xml", questions);
-            return questions;
-        }
-
-        public void deserializeQuestions(List<Question> questions)  // Ca c'est bon, permet de déserializer le fichier XML et de mettre le résultat dans une liste de questions
+        public void deserializeQuestions()  // Ca c'est bon, permet de déserializer le fichier XML et de mettre le résultat dans une liste de questions
         {
             questions = QuestionCollection.CreateFromFile("bonjour.xml");
         }
@@ -121,7 +71,6 @@ namespace Exercice1
                     reponse = question.Reponses[question.ID_BonneReponse];
                     question.Choisie = true;
                     compteur++;
-
                 }
             }
 
@@ -197,6 +146,8 @@ namespace Exercice1
                 photo.Visible = true;
                 photo.Image = Image.FromFile(question.ImagePath);
             }
+            pbQuest.PerformStep();
+
 
         }
 
@@ -206,5 +157,10 @@ namespace Exercice1
             formResultat.Show();
             this.Hide();
         }
-    }
+
+        private void lblTitreQuestion_Click(object sender, EventArgs e)
+        {
+
+        }
+}
 }

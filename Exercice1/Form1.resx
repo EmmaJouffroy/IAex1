@@ -117,4 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lblExplications.Text" xml:space="preserve">
+    <value>Ce questionnaire sert à tester vos connaissances sur le module d'Intelligence Artificielle au cours du premier semèstre de deuxième année. 
+
+Le bouton "Questions" vous propose un quizz de 20 questions sur l'ensemble des notions abordées en cours. Le second bouton, "Dijkstra" 
+vous demande de trouver le chemin le plus court sur un graph, en utilisant l'algorithme de Dijkstra. 
+
+Bon courage !
+</value>
+  </data>
 </root>

@@ -32,50 +32,85 @@
             this.lblScore = new System.Windows.Forms.Label();
             this.lblScoreNbre = new System.Windows.Forms.Label();
             this.lblCommentaire = new System.Windows.Forms.Label();
+            this.lblSousTitre = new System.Windows.Forms.Label();
+            this.lblTitre = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnRecommencer
             // 
-            this.btnRecommencer.Location = new System.Drawing.Point(247, 345);
+            this.btnRecommencer.BackColor = System.Drawing.Color.Teal;
+            this.btnRecommencer.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecommencer.ForeColor = System.Drawing.Color.White;
+            this.btnRecommencer.Location = new System.Drawing.Point(115, 371);
             this.btnRecommencer.Name = "btnRecommencer";
             this.btnRecommencer.Size = new System.Drawing.Size(210, 81);
             this.btnRecommencer.TabIndex = 0;
             this.btnRecommencer.Text = "Recommencer";
-            this.btnRecommencer.UseVisualStyleBackColor = true;
+            this.btnRecommencer.UseVisualStyleBackColor = false;
             this.btnRecommencer.Click += new System.EventHandler(this.btnRecommencer_Click);
             // 
             // lblScore
             // 
             this.lblScore.AutoSize = true;
-            this.lblScore.Location = new System.Drawing.Point(299, 101);
+            this.lblScore.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore.Location = new System.Drawing.Point(175, 174);
             this.lblScore.Name = "lblScore";
-            this.lblScore.Size = new System.Drawing.Size(70, 13);
+            this.lblScore.Size = new System.Drawing.Size(85, 18);
             this.lblScore.TabIndex = 1;
             this.lblScore.Text = "Votre score : ";
             // 
             // lblScoreNbre
             // 
             this.lblScoreNbre.AutoSize = true;
-            this.lblScoreNbre.Location = new System.Drawing.Point(264, 188);
+            this.lblScoreNbre.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScoreNbre.Location = new System.Drawing.Point(195, 219);
             this.lblScoreNbre.Name = "lblScoreNbre";
-            this.lblScoreNbre.Size = new System.Drawing.Size(68, 13);
+            this.lblScoreNbre.Size = new System.Drawing.Size(130, 26);
             this.lblScoreNbre.TabIndex = 2;
             this.lblScoreNbre.Text = "lblScoreNbre";
             // 
             // lblCommentaire
             // 
             this.lblCommentaire.AutoSize = true;
-            this.lblCommentaire.Location = new System.Drawing.Point(296, 232);
+            this.lblCommentaire.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCommentaire.Location = new System.Drawing.Point(112, 280);
             this.lblCommentaire.Name = "lblCommentaire";
-            this.lblCommentaire.Size = new System.Drawing.Size(35, 13);
+            this.lblCommentaire.Size = new System.Drawing.Size(43, 18);
             this.lblCommentaire.TabIndex = 3;
             this.lblCommentaire.Text = "label1";
+            // 
+            // lblSousTitre
+            // 
+            this.lblSousTitre.AutoSize = true;
+            this.lblSousTitre.BackColor = System.Drawing.Color.Teal;
+            this.lblSousTitre.Font = new System.Drawing.Font("Open Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSousTitre.ForeColor = System.Drawing.Color.White;
+            this.lblSousTitre.Location = new System.Drawing.Point(90, 82);
+            this.lblSousTitre.Name = "lblSousTitre";
+            this.lblSousTitre.Size = new System.Drawing.Size(274, 17);
+            this.lblSousTitre.TabIndex = 5;
+            this.lblSousTitre.Text = "Un résumé de ce que vous avez appris en cours";
+            // 
+            // lblTitre
+            // 
+            this.lblTitre.AutoSize = true;
+            this.lblTitre.BackColor = System.Drawing.Color.Teal;
+            this.lblTitre.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitre.ForeColor = System.Drawing.Color.White;
+            this.lblTitre.Location = new System.Drawing.Point(0, 0);
+            this.lblTitre.Name = "lblTitre";
+            this.lblTitre.Padding = new System.Windows.Forms.Padding(70, 50, 70, 50);
+            this.lblTitre.Size = new System.Drawing.Size(470, 128);
+            this.lblTitre.TabIndex = 4;
+            this.lblTitre.Text = "Quizz sur l\'Intelligence Artificielle";
             // 
             // FormFinQuestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(684, 491);
+            this.ClientSize = new System.Drawing.Size(466, 491);
+            this.Controls.Add(this.lblSousTitre);
+            this.Controls.Add(this.lblTitre);
             this.Controls.Add(this.lblCommentaire);
             this.Controls.Add(this.lblScoreNbre);
             this.Controls.Add(this.lblScore);
@@ -93,5 +128,7 @@
         private System.Windows.Forms.Label lblScore;
         private System.Windows.Forms.Label lblScoreNbre;
         private System.Windows.Forms.Label lblCommentaire;
+        private System.Windows.Forms.Label lblSousTitre;
+        private System.Windows.Forms.Label lblTitre;
     }
 }
