@@ -34,11 +34,13 @@
             this.lblCommentaire = new System.Windows.Forms.Label();
             this.lblSousTitre = new System.Windows.Forms.Label();
             this.lblTitre = new System.Windows.Forms.Label();
+            this.btnExit = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // btnRecommencer
             // 
             this.btnRecommencer.BackColor = System.Drawing.Color.Teal;
+            this.btnRecommencer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRecommencer.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRecommencer.ForeColor = System.Drawing.Color.White;
             this.btnRecommencer.Location = new System.Drawing.Point(115, 371);
@@ -104,11 +106,27 @@
             this.lblTitre.TabIndex = 4;
             this.lblTitre.Text = "Quizz sur l\'Intelligence Artificielle";
             // 
+            // btnExit
+            // 
+            this.btnExit.AutoSize = true;
+            this.btnExit.BackColor = System.Drawing.Color.Teal;
+            this.btnExit.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.LinkColor = System.Drawing.Color.White;
+            this.btnExit.Location = new System.Drawing.Point(436, 18);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(18, 20);
+            this.btnExit.TabIndex = 16;
+            this.btnExit.TabStop = true;
+            this.btnExit.Text = "X";
+            this.btnExit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnExit_LinkClicked);
+            // 
             // FormFinQuestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(466, 491);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.lblSousTitre);
             this.Controls.Add(this.lblTitre);
             this.Controls.Add(this.lblCommentaire);
@@ -130,5 +148,6 @@
         private System.Windows.Forms.Label lblCommentaire;
         private System.Windows.Forms.Label lblSousTitre;
         private System.Windows.Forms.Label lblTitre;
+        private System.Windows.Forms.LinkLabel btnExit;
     }
 }

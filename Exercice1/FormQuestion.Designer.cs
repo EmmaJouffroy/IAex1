@@ -43,6 +43,8 @@
             this.lblNumQuestTxt = new System.Windows.Forms.Label();
             this.pbQuest = new System.Windows.Forms.ProgressBar();
             this.lblTitre = new System.Windows.Forms.Label();
+            this.lkMenu = new System.Windows.Forms.LinkLabel();
+            this.btnExit = new System.Windows.Forms.LinkLabel();
             this.gpBoxReponse.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.photo)).BeginInit();
             this.SuspendLayout();
@@ -87,6 +89,7 @@
             // btnValider
             // 
             this.btnValider.BackColor = System.Drawing.Color.Teal;
+            this.btnValider.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnValider.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnValider.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnValider.Location = new System.Drawing.Point(189, 769);
@@ -134,6 +137,7 @@
             // btnQuestSuiv
             // 
             this.btnQuestSuiv.BackColor = System.Drawing.Color.Teal;
+            this.btnQuestSuiv.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnQuestSuiv.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuestSuiv.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnQuestSuiv.Location = new System.Drawing.Point(189, 769);
@@ -158,9 +162,10 @@
             // btnResult
             // 
             this.btnResult.BackColor = System.Drawing.Color.Teal;
+            this.btnResult.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnResult.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResult.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnResult.Location = new System.Drawing.Point(189, 755);
+            this.btnResult.Location = new System.Drawing.Point(189, 765);
             this.btnResult.Name = "btnResult";
             this.btnResult.Size = new System.Drawing.Size(191, 69);
             this.btnResult.TabIndex = 7;
@@ -209,12 +214,42 @@
             this.lblTitre.TabIndex = 11;
             this.lblTitre.Text = "Quizz sur l\'Intelligence Artificielle";
             // 
+            // lkMenu
+            // 
+            this.lkMenu.AutoSize = true;
+            this.lkMenu.BackColor = System.Drawing.Color.Teal;
+            this.lkMenu.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lkMenu.LinkColor = System.Drawing.Color.White;
+            this.lkMenu.Location = new System.Drawing.Point(33, 13);
+            this.lkMenu.Name = "lkMenu";
+            this.lkMenu.Size = new System.Drawing.Size(49, 20);
+            this.lkMenu.TabIndex = 13;
+            this.lkMenu.TabStop = true;
+            this.lkMenu.Text = "Menu";
+            this.lkMenu.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkMenu_LinkClicked);
+            // 
+            // btnExit
+            // 
+            this.btnExit.AutoSize = true;
+            this.btnExit.BackColor = System.Drawing.Color.Teal;
+            this.btnExit.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.LinkColor = System.Drawing.Color.White;
+            this.btnExit.Location = new System.Drawing.Point(586, 13);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(18, 20);
+            this.btnExit.TabIndex = 14;
+            this.btnExit.TabStop = true;
+            this.btnExit.Text = "X";
+            this.btnExit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnExit_LinkClicked);
+            // 
             // FormQuestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(631, 846);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.lkMenu);
             this.Controls.Add(this.pbQuest);
             this.Controls.Add(this.lblNumQuestTxt);
             this.Controls.Add(this.photo);
@@ -253,5 +288,7 @@
         private System.Windows.Forms.Label lblNumQuestTxt;
         private System.Windows.Forms.ProgressBar pbQuest;
         private System.Windows.Forms.Label lblTitre;
+        private System.Windows.Forms.LinkLabel lkMenu;
+        private System.Windows.Forms.LinkLabel btnExit;
     }
 }

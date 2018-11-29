@@ -20,6 +20,7 @@ namespace Exercice1
 
         public FormQuestion() // Normalement cette fonction là est bonne
         {
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
             InitializeComponent();
             clbReponses.Click += new EventHandler(clbReponses_SelectedIndexChanged);
             photo.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -162,5 +163,17 @@ namespace Exercice1
         {
 
         }
-}
+
+        private void lkMenu_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form1 menu = new Form1();
+            menu.Show();
+            this.Hide();
+        }
+
+        private void btnExit_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Close();
+        }
+    }
 }

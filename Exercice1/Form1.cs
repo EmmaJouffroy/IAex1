@@ -15,6 +15,7 @@ namespace Exercice1
         public Form1()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
         private void btnQuestions_Click(object sender, EventArgs e)
@@ -25,9 +26,9 @@ namespace Exercice1
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void btnExit_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            this.Close();
         }
     }
 }

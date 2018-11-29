@@ -14,6 +14,7 @@ namespace Exercice1
     {
         public FormFinQuestion(int score)
         {
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
             InitializeComponent();
             lblScoreNbre.Text = score.ToString()+"/20";
             if (score < 10) { lblCommentaire.Text = "Vous devriez réviser votre cours avant le partiel..."; }
@@ -25,6 +26,11 @@ namespace Exercice1
             Form1 debut = new Form1();
             debut.Show();
             this.Hide();
+        }
+
+        private void btnExit_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -34,11 +34,13 @@
             this.lblSousTitre = new System.Windows.Forms.Label();
             this.btnDijkstra = new System.Windows.Forms.Button();
             this.lblExplications = new System.Windows.Forms.Label();
+            this.btnExit = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // btnQuestions
             // 
             this.btnQuestions.BackColor = System.Drawing.Color.Teal;
+            this.btnQuestions.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnQuestions.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuestions.ForeColor = System.Drawing.Color.White;
             this.btnQuestions.Location = new System.Drawing.Point(40, 429);
@@ -77,6 +79,7 @@
             // btnDijkstra
             // 
             this.btnDijkstra.BackColor = System.Drawing.Color.Teal;
+            this.btnDijkstra.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDijkstra.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDijkstra.ForeColor = System.Drawing.Color.White;
             this.btnDijkstra.Location = new System.Drawing.Point(254, 429);
@@ -97,12 +100,27 @@
             this.lblExplications.TabIndex = 4;
             this.lblExplications.Text = resources.GetString("lblExplications.Text");
             // 
+            // btnExit
+            // 
+            this.btnExit.AutoSize = true;
+            this.btnExit.BackColor = System.Drawing.Color.Teal;
+            this.btnExit.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.LinkColor = System.Drawing.Color.White;
+            this.btnExit.Location = new System.Drawing.Point(431, 19);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(18, 20);
+            this.btnExit.TabIndex = 15;
+            this.btnExit.TabStop = true;
+            this.btnExit.Text = "X";
+            this.btnExit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnExit_LinkClicked);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(473, 550);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.lblExplications);
             this.Controls.Add(this.btnDijkstra);
             this.Controls.Add(this.lblSousTitre);
@@ -110,7 +128,6 @@
             this.Controls.Add(this.btnQuestions);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,6 +140,7 @@
         private System.Windows.Forms.Label lblSousTitre;
         private System.Windows.Forms.Button btnDijkstra;
         private System.Windows.Forms.Label lblExplications;
+        private System.Windows.Forms.LinkLabel btnExit;
     }
 }
 
