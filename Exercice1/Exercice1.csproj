@@ -52,6 +52,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDijkstra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDijkstra.Designer.cs">
+      <DependentUpon>FormDijkstra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFinDijkstra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFinDijkstra.Designer.cs">
+      <DependentUpon>FormFinDijkstra.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormFinQuestion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +82,12 @@
     <Compile Include="QuestionCollection.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDijkstra.resx">
+      <DependentUpon>FormDijkstra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFinDijkstra.resx">
+      <DependentUpon>FormFinDijkstra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormFinQuestion.resx">
       <DependentUpon>FormFinQuestion.cs</DependentUpon>

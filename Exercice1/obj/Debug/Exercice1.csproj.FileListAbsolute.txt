@@ -9,3 +9,5 @@ H:\Exercica1IA2\Exercice1\Exercice1\obj\Debug\Exercice1.exe
 H:\Exercica1IA2\Exercice1\Exercice1\obj\Debug\Exercice1.pdb
 H:\Exercica1IA2\Exercice1\Exercice1\obj\Debug\Exercice1.FormFinQuestion.resources
 H:\Exercica1IA2\Exercice1\Exercice1\obj\Debug\Exercice1.csprojResolveAssemblyReference.cache
+H:\Exercica1IA2\Exercice1\Exercice1\obj\Debug\Exercice1.FormDijkstra.resources
+H:\Exercica1IA2\Exercice1\Exercice1\obj\Debug\Exercice1.FormFinDijkstra.resources

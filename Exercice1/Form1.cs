@@ -30,5 +30,12 @@ namespace Exercice1
         {
             this.Close();
         }
+
+        private void btnDijkstra_Click(object sender, EventArgs e)
+        {
+            FormDijkstra Dijkstra = new FormDijkstra();
+            Dijkstra.Show();
+            this.Hide();
+        }
     }
 }

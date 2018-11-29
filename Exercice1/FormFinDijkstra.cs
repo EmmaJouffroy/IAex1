@@ -10,15 +10,15 @@ using System.Windows.Forms;
 
 namespace Exercice1
 {
-    public partial class FormFinQuestion : Form
+    public partial class FormFinDijkstra : Form
     {
-        public FormFinQuestion(int score)
+        public FormFinDijkstra()
         {
-            this.FormBorderStyle = FormBorderStyle.FixedSingle;
             InitializeComponent();
-            lblScoreNbre.Text = score.ToString()+"/20";
-            if (score < 10) { lblCommentaire.Text = "Vous devriez réviser votre cours avant le partiel..."; }
-            else { lblCommentaire.Text = "Bravo, vous êtes fin prêts pour ce qui arrive ! ";  }
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            lbFermesFinaux.Enabled = false;
+            lbOuvertsFinaux.Enabled = false;
+            treeViewFinal.Enabled = false;
         }
 
         private void btnRecommencer_Click(object sender, EventArgs e)
@@ -33,12 +33,11 @@ namespace Exercice1
             this.Close();
         }
 
-        private void lkExoDijkstra_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void lkExoQuestions_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            FormDijkstra exerciceDijkstra = new FormDijkstra();
-            exerciceDijkstra.Show();
+            FormQuestion questions = new FormQuestion();
+            questions.Show();
             this.Hide();
-
         }
     }
 }

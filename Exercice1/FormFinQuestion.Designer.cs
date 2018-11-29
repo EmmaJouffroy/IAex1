@@ -35,6 +35,7 @@
             this.lblSousTitre = new System.Windows.Forms.Label();
             this.lblTitre = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.LinkLabel();
+            this.lkExoDijkstra = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // btnRecommencer
@@ -45,9 +46,10 @@
             this.btnRecommencer.ForeColor = System.Drawing.Color.White;
             this.btnRecommencer.Location = new System.Drawing.Point(115, 371);
             this.btnRecommencer.Name = "btnRecommencer";
+            this.btnRecommencer.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnRecommencer.Size = new System.Drawing.Size(210, 81);
             this.btnRecommencer.TabIndex = 0;
-            this.btnRecommencer.Text = "Recommencer";
+            this.btnRecommencer.Text = "Retour au menu";
             this.btnRecommencer.UseVisualStyleBackColor = false;
             this.btnRecommencer.Click += new System.EventHandler(this.btnRecommencer_Click);
             // 
@@ -120,12 +122,27 @@
             this.btnExit.Text = "X";
             this.btnExit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnExit_LinkClicked);
             // 
+            // lkExoDijkstra
+            // 
+            this.lkExoDijkstra.AutoSize = true;
+            this.lkExoDijkstra.BackColor = System.Drawing.Color.Teal;
+            this.lkExoDijkstra.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lkExoDijkstra.LinkColor = System.Drawing.Color.White;
+            this.lkExoDijkstra.Location = new System.Drawing.Point(13, 24);
+            this.lkExoDijkstra.Name = "lkExoDijkstra";
+            this.lkExoDijkstra.Size = new System.Drawing.Size(119, 18);
+            this.lkExoDijkstra.TabIndex = 17;
+            this.lkExoDijkstra.TabStop = true;
+            this.lkExoDijkstra.Text = "Exercice Dijkstra";
+            this.lkExoDijkstra.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkExoDijkstra_LinkClicked);
+            // 
             // FormFinQuestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(466, 491);
+            this.Controls.Add(this.lkExoDijkstra);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.lblSousTitre);
             this.Controls.Add(this.lblTitre);
@@ -149,5 +166,6 @@
         private System.Windows.Forms.Label lblSousTitre;
         private System.Windows.Forms.Label lblTitre;
         private System.Windows.Forms.LinkLabel btnExit;
+        private System.Windows.Forms.LinkLabel lkExoDijkstra;
     }
 }

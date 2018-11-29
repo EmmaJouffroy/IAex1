@@ -88,6 +88,7 @@
             this.btnDijkstra.TabIndex = 3;
             this.btnDijkstra.Text = "Dijkstra";
             this.btnDijkstra.UseVisualStyleBackColor = false;
+            this.btnDijkstra.Click += new System.EventHandler(this.btnDijkstra_Click);
             // 
             // lblExplications
             // 
