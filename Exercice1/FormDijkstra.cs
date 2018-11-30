@@ -43,10 +43,7 @@ namespace Exercice1
             reponses = new List<String>[2];
             reponses[0] = new List<string>();
             reponses[1] = new List<string>();
-
-            InitialisationFichierTexte("graphe1.txt");
-            numinitial = 0;
-            numfinal = 6;
+            InitialisationFichierTexte("graphe1.txt");            
             Noeud Ninit = new Noeud(numinitial);
             Noeud NF = new Noeud(numfinal);
             ArbreRecherche sol = new ArbreRecherche(matrice);
@@ -73,10 +70,8 @@ namespace Exercice1
                 Recursive(treeViewExercice.Nodes[0]);
                 foreach (TreeNode t in listeTexteNoeuds)
                     reponseArbreVisible += t.Text;
-
             }
            
-            
         }
 
         public void Recursive(TreeNode NoeudParent)
@@ -115,7 +110,7 @@ namespace Exercice1
             //  arc : n°noeud départ    n°noeud arrivée  valeur
             //  exemple 4 : 
             ligne = monStreamReader.ReadLine();
-            while (ligne != null)
+            while (ligne != null && ligne[0] != '/')
             {
                 i = 0;
                 while (ligne[i] != ':') i++;
@@ -153,6 +148,29 @@ namespace Exercice1
                 matrice[N2, N1] = val;
                 ligne = monStreamReader.ReadLine();
             }
+            //Recup noeud init
+            i = 0;
+            if (ligne[i] == '/')
+            {
+                while (ligne[i] != ':') i++;
+                i++;
+                while (ligne[i] == ' ') i++;
+                string tempo = Convert.ToString(ligne[i]);
+                nomNoeudInit.Text =tempo;
+                numinitial = Convert.ToInt32(tempo);
+            }
+            ligne = monStreamReader.ReadLine();
+            //Recup noeud final
+            i = 0;
+            if (ligne[i] == '/')
+            {
+                while (ligne[i] != ':') i++;
+                i++;
+                while (ligne[i] == ' ') i++;
+                string tempo = Convert.ToString(ligne[i]);
+                nomNoeudFinal.Text = tempo;
+                numfinal = Convert.ToInt32(tempo);
+            }
             // Fermeture du StreamReader (obligatoire) 
             monStreamReader.Close();
         }
@@ -168,7 +186,6 @@ namespace Exercice1
             menu.Show();
             this.Hide();
         }
-
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -221,7 +238,7 @@ namespace Exercice1
             }
         }
 
-            public bool verifierEntreeTextBox()
+        public bool verifierEntreeTextBox()
             {
                 bool acceptable = true;
 
@@ -284,7 +301,6 @@ namespace Exercice1
                 }
                 return acceptable;
             }
-
 
         public void treeViewExercice_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
         {

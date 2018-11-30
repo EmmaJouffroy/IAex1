@@ -41,13 +41,13 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.treeViewFinal = new System.Windows.Forms.TreeView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.labelReponse = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.listBoxRepOuverts = new System.Windows.Forms.ListBox();
             this.listBoxRepFermes = new System.Windows.Forms.ListBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.labelReponse = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -107,7 +107,7 @@
             // 
             this.lblFermesFinaux.AutoSize = true;
             this.lblFermesFinaux.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFermesFinaux.Location = new System.Drawing.Point(37, 65);
+            this.lblFermesFinaux.Location = new System.Drawing.Point(40, 47);
             this.lblFermesFinaux.Name = "lblFermesFinaux";
             this.lblFermesFinaux.Size = new System.Drawing.Size(112, 16);
             this.lblFermesFinaux.TabIndex = 22;
@@ -117,7 +117,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(208, 65);
+            this.label2.Location = new System.Drawing.Point(225, 49);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(117, 16);
             this.label2.TabIndex = 23;
@@ -127,7 +127,7 @@
             // 
             this.lblArbreFinal.AutoSize = true;
             this.lblArbreFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblArbreFinal.Location = new System.Drawing.Point(426, 65);
+            this.lblArbreFinal.Location = new System.Drawing.Point(429, 50);
             this.lblArbreFinal.Name = "lblArbreFinal";
             this.lblArbreFinal.Size = new System.Drawing.Size(87, 16);
             this.lblArbreFinal.TabIndex = 24;
@@ -136,7 +136,7 @@
             // lbFermesFinaux
             // 
             this.lbFermesFinaux.FormattingEnabled = true;
-            this.lbFermesFinaux.Location = new System.Drawing.Point(29, 84);
+            this.lbFermesFinaux.Location = new System.Drawing.Point(38, 74);
             this.lbFermesFinaux.Name = "lbFermesFinaux";
             this.lbFermesFinaux.Size = new System.Drawing.Size(120, 147);
             this.lbFermesFinaux.TabIndex = 25;
@@ -145,7 +145,7 @@
             // 
             this.lbOuvertsFinaux.ForeColor = System.Drawing.Color.Black;
             this.lbOuvertsFinaux.FormattingEnabled = true;
-            this.lbOuvertsFinaux.Location = new System.Drawing.Point(211, 84);
+            this.lbOuvertsFinaux.Location = new System.Drawing.Point(223, 74);
             this.lbOuvertsFinaux.Name = "lbOuvertsFinaux";
             this.lbOuvertsFinaux.Size = new System.Drawing.Size(120, 147);
             this.lbOuvertsFinaux.TabIndex = 26;
@@ -181,9 +181,9 @@
             // 
             // treeViewFinal
             // 
-            this.treeViewFinal.Location = new System.Drawing.Point(398, 84);
+            this.treeViewFinal.Location = new System.Drawing.Point(410, 74);
             this.treeViewFinal.Name = "treeViewFinal";
-            this.treeViewFinal.Size = new System.Drawing.Size(127, 144);
+            this.treeViewFinal.Size = new System.Drawing.Size(127, 147);
             this.treeViewFinal.TabIndex = 27;
             // 
             // groupBox2
@@ -200,6 +200,26 @@
             this.groupBox2.Size = new System.Drawing.Size(588, 227);
             this.groupBox2.TabIndex = 36;
             this.groupBox2.TabStop = false;
+            // 
+            // labelReponse
+            // 
+            this.labelReponse.AutoSize = true;
+            this.labelReponse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelReponse.Location = new System.Drawing.Point(437, 87);
+            this.labelReponse.Name = "labelReponse";
+            this.labelReponse.Size = new System.Drawing.Size(51, 20);
+            this.labelReponse.TabIndex = 29;
+            this.labelReponse.Text = "label8";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(426, 48);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(87, 16);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "Arbre final :";
             // 
             // label4
             // 
@@ -225,7 +245,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(195, 48);
+            this.label6.Location = new System.Drawing.Point(212, 48);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(117, 16);
             this.label6.TabIndex = 23;
@@ -234,7 +254,7 @@
             // listBoxRepOuverts
             // 
             this.listBoxRepOuverts.FormattingEnabled = true;
-            this.listBoxRepOuverts.Location = new System.Drawing.Point(211, 74);
+            this.listBoxRepOuverts.Location = new System.Drawing.Point(211, 71);
             this.listBoxRepOuverts.Name = "listBoxRepOuverts";
             this.listBoxRepOuverts.Size = new System.Drawing.Size(120, 147);
             this.listBoxRepOuverts.TabIndex = 26;
@@ -242,30 +262,10 @@
             // listBoxRepFermes
             // 
             this.listBoxRepFermes.FormattingEnabled = true;
-            this.listBoxRepFermes.Location = new System.Drawing.Point(31, 74);
+            this.listBoxRepFermes.Location = new System.Drawing.Point(31, 71);
             this.listBoxRepFermes.Name = "listBoxRepFermes";
             this.listBoxRepFermes.Size = new System.Drawing.Size(118, 147);
             this.listBoxRepFermes.TabIndex = 25;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(426, 48);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 16);
-            this.label3.TabIndex = 27;
-            this.label3.Text = "Arbre final :";
-            // 
-            // labelReponse
-            // 
-            this.labelReponse.AutoSize = true;
-            this.labelReponse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelReponse.Location = new System.Drawing.Point(437, 87);
-            this.labelReponse.Name = "labelReponse";
-            this.labelReponse.Size = new System.Drawing.Size(51, 20);
-            this.labelReponse.TabIndex = 29;
-            this.labelReponse.Text = "label8";
             // 
             // FormFinDijkstra
             // 

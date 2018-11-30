@@ -115,10 +115,7 @@ namespace Exercice1
                     this.listBoxRepOuverts.ForeColor = Color.Red;
                 }
             }
-
-
-
-
+            
         }
 
         private void btnRecommencer_Click(object sender, EventArgs e)

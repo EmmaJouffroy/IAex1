@@ -30,7 +30,6 @@
         {
             this.lblTitre = new System.Windows.Forms.Label();
             this.lblDesc = new System.Windows.Forms.Label();
-            this.photo = new System.Windows.Forms.PictureBox();
             this.lblNoeudInit = new System.Windows.Forms.Label();
             this.nomNoeudInit = new System.Windows.Forms.Label();
             this.lblNoeudFinal = new System.Windows.Forms.Label();
@@ -53,6 +52,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.treeViewNonVisible = new System.Windows.Forms.TreeView();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.photo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.photo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,14 +80,6 @@
             this.lblDesc.Size = new System.Drawing.Size(179, 18);
             this.lblDesc.TabIndex = 13;
             this.lblDesc.Text = "Description de l\'arbre :";
-            // 
-            // photo
-            // 
-            this.photo.Location = new System.Drawing.Point(42, 171);
-            this.photo.Name = "photo";
-            this.photo.Size = new System.Drawing.Size(555, 206);
-            this.photo.TabIndex = 14;
-            this.photo.TabStop = false;
             // 
             // lblNoeudInit
             // 
@@ -303,7 +297,7 @@
             // 
             // treeViewNonVisible
             // 
-            this.treeViewNonVisible.Location = new System.Drawing.Point(79, 145);
+            this.treeViewNonVisible.Location = new System.Drawing.Point(445, 557);
             this.treeViewNonVisible.Name = "treeViewNonVisible";
             this.treeViewNonVisible.Size = new System.Drawing.Size(121, 97);
             this.treeViewNonVisible.TabIndex = 37;
@@ -320,12 +314,30 @@
             this.label1.TabIndex = 38;
             this.label1.Text = "Double-cliquer sur chaque noeud \r\n                et les renommer";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Exercice1.Properties.Resources.graph1;
+            this.pictureBox1.Location = new System.Drawing.Point(119, 171);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(402, 206);
+            this.pictureBox1.TabIndex = 39;
+            this.pictureBox1.TabStop = false;
+            // 
+            // photo
+            // 
+            this.photo.Location = new System.Drawing.Point(42, 171);
+            this.photo.Name = "photo";
+            this.photo.Size = new System.Drawing.Size(555, 206);
+            this.photo.TabIndex = 14;
+            this.photo.TabStop = false;
+            // 
             // FormDijkstra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(630, 857);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.treeViewNonVisible);
             this.Controls.Add(this.button1);
@@ -353,6 +365,7 @@
             this.Controls.Add(this.btnEtapeSuivante);
             this.Name = "FormDijkstra";
             this.Text = "FormDijkstra";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.photo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -386,5 +399,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TreeView treeViewNonVisible;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

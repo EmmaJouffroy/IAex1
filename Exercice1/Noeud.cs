@@ -18,7 +18,6 @@ namespace Exercice1
         {
             this.x = x;
             this.ID = ID;
-
         }
         public Noeud(int ID)
         {

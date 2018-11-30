@@ -43,8 +43,6 @@ namespace Exercice1
         }
         public List<Noeud> Dijkstra(Noeud noeudInit, Noeud noeudFinal)
         {
-
-
             List<Noeud> SuccNoeudCourant;
             Noeud noeudCourant = new Noeud(noeudInit.ID);
             //Noeud noeudCourant = noeudInit;
@@ -128,9 +126,6 @@ namespace Exercice1
             }
             return CheminLePlusCourt;
         }
-
-
-
         public void InsertDansOuverts(Noeud NewNode)
         {
             // Insertion pour respecter l'ordre du cout total le plus petit au plus grand
@@ -171,11 +166,9 @@ namespace Exercice1
             TV.Nodes.Add(TN);
             AjouteBranche(L_Fermes[0], TN, visible);
         }
-
         // AjouteBranche est exclusivement appelée par GetSearchTree; les noeuds sont ajoutés de manière récursive
         public void AjouteBranche(Noeud GN, TreeNode TN, bool visible)
         {
-
             foreach (Noeud GNfils in GN.Enfants)
             {
                 TreeNode TNfils;
@@ -189,7 +182,6 @@ namespace Exercice1
                 }
                 TN.Nodes.Add(TNfils);
                 if (GNfils.Enfants.Count > 0) AjouteBranche(GNfils, TNfils, visible);
-
             }
         }
     }

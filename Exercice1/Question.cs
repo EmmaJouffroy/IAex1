@@ -21,10 +21,7 @@ namespace Exercice1
 
         [System.Xml.Serialization.XmlElementAttribute("Reponses")]
         public string[] Reponses { get; set; }
-
-       
-
-
+        
         [System.Xml.Serialization.XmlElementAttribute("ImagePath")]
         public string ImagePath { get; set; }
 
