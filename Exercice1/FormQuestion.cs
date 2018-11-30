@@ -51,7 +51,7 @@ namespace Exercice1
 
         public void deserializeQuestions()  // Ca c'est bon, permet de déserializer le fichier XML et de mettre le résultat dans une liste de questions
         {
-            questions = QuestionCollection.CreateFromFile("bonjour.xml");
+            questions = QuestionCollection.CreateFromFile("questions.xml");
         }
 
         public void chooseRandomQuestion() // permet de choisir aléatoirement la question que l'on va traiter. Reste plus qu'à faire en sorte que le numéro choisi n'a pas encore été choisi pour le moment. 
