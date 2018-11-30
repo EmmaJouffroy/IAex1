@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lblExerciceConsigne.Text" xml:space="preserve">
+    <value>A chaque tour, rentrez les ouverts et les fermés, dans l'ordre qui vous semble le plus pertinent. L'ordre associé vous servira à construire l'arbre.  Avant de valider l'exercice, n'oubliez pas de construire l'arbre final. Bon courage.</value>
+  </data>
 </root>

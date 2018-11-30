@@ -205,11 +205,11 @@
             // 
             this.labelReponse.AutoSize = true;
             this.labelReponse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelReponse.Location = new System.Drawing.Point(437, 87);
+            this.labelReponse.Location = new System.Drawing.Point(399, 132);
             this.labelReponse.Name = "labelReponse";
-            this.labelReponse.Size = new System.Drawing.Size(51, 20);
+            this.labelReponse.Size = new System.Drawing.Size(149, 20);
             this.labelReponse.TabIndex = 29;
-            this.labelReponse.Text = "label8";
+            this.labelReponse.Text = "Mauvaise Reponse!";
             // 
             // label3
             // 

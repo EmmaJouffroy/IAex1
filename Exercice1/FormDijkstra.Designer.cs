@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDijkstra));
             this.lblTitre = new System.Windows.Forms.Label();
             this.lblDesc = new System.Windows.Forms.Label();
             this.lblNoeudInit = new System.Windows.Forms.Label();
@@ -95,17 +96,16 @@
             // 
             this.nomNoeudInit.AutoSize = true;
             this.nomNoeudInit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nomNoeudInit.Location = new System.Drawing.Point(254, 394);
+            this.nomNoeudInit.Location = new System.Drawing.Point(257, 394);
             this.nomNoeudInit.Name = "nomNoeudInit";
-            this.nomNoeudInit.Size = new System.Drawing.Size(15, 16);
+            this.nomNoeudInit.Size = new System.Drawing.Size(0, 16);
             this.nomNoeudInit.TabIndex = 16;
-            this.nomNoeudInit.Text = "1";
             // 
             // lblNoeudFinal
             // 
             this.lblNoeudFinal.AutoSize = true;
             this.lblNoeudFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNoeudFinal.Location = new System.Drawing.Point(300, 394);
+            this.lblNoeudFinal.Location = new System.Drawing.Point(315, 395);
             this.lblNoeudFinal.Name = "lblNoeudFinal";
             this.lblNoeudFinal.Size = new System.Drawing.Size(114, 16);
             this.lblNoeudFinal.TabIndex = 17;
@@ -115,11 +115,10 @@
             // 
             this.nomNoeudFinal.AutoSize = true;
             this.nomNoeudFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nomNoeudFinal.Location = new System.Drawing.Point(414, 395);
+            this.nomNoeudFinal.Location = new System.Drawing.Point(437, 395);
             this.nomNoeudFinal.Name = "nomNoeudFinal";
-            this.nomNoeudFinal.Size = new System.Drawing.Size(15, 16);
+            this.nomNoeudFinal.Size = new System.Drawing.Size(0, 16);
             this.nomNoeudFinal.TabIndex = 18;
-            this.nomNoeudFinal.Text = "2";
             // 
             // lblExercice
             // 
@@ -135,13 +134,12 @@
             // 
             this.lblExerciceConsigne.AutoSize = true;
             this.lblExerciceConsigne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblExerciceConsigne.Location = new System.Drawing.Point(132, 449);
+            this.lblExerciceConsigne.Location = new System.Drawing.Point(132, 435);
             this.lblExerciceConsigne.MaximumSize = new System.Drawing.Size(500, 0);
             this.lblExerciceConsigne.Name = "lblExerciceConsigne";
-            this.lblExerciceConsigne.Size = new System.Drawing.Size(478, 32);
+            this.lblExerciceConsigne.Size = new System.Drawing.Size(484, 48);
             this.lblExerciceConsigne.TabIndex = 20;
-            this.lblExerciceConsigne.Text = "A chaque tour, rentrez les ouverts et les fermés, dans l\'ordre qui vous semble le" +
-    " plus pertinent. L\'ordre associé servira à construire l\'arbre. ";
+            this.lblExerciceConsigne.Text = resources.GetString("lblExerciceConsigne.Text");
             // 
             // treeViewExercice
             // 
